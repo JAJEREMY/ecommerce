@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker University - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar (Loaded from external file) -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <!-- Login Section -->
+    <section class="login-container">
+        <div class="login-box">
+            <h2>Login to Sneaker University</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required minlength="8">
+                </div>
+                <p id="error-message"></p>
+                <button type="submit" class="btn">Login</button>
+                <p>Don't have an account? <a href="register.html">Sign up</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sneaker University. All Rights Reserved.</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - MotionBoyz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <script src="shop.js"></script>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- JavaScript to load navbar -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('navbar.html')
+                .then(response => response.ok ? response.text() : Promise.reject('Navbar not found'))
+                .then(data => document.getElementById('navbar').innerHTML = data)
+                .catch(error => console.error(error));
+
+            // Redirect if not logged in
+            if (!localStorage.getItem("isLoggedIn")) {
+                alert("You must log in first!");
+                window.location.href = "login.html";
+            }
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="shop-hero">
+        <h1>Shop the Latest Jordans, Air Force Ones & Clarks</h1>
+        <p>Authentic footwear at unbeatable prices.</p>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <h2>Choose Your Style</h2>
+        <div class="category-list">
+            <a href="#jordans" class="category-item">Jordans</a>
+            <a href="#airforce" class="category-item">Air Force Ones</a>
+            <a href="#clarks" class="category-item">Clarks</a>
+        </div>
+    </section>
+
+    <!-- Jordans Collection -->
+    <section id="jordans" class="product-section">
+        <h2>Jordans</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="/Assets/jordan1.jpg" alt="Air Jordan 1">
+                <h3>Air Jordan 1</h3>
+                <p>$180 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/jordan4.jpg" alt="Air Jordan 4">
+                <h3>Air Jordan 4</h3>
+                <p>$220 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Air Force Ones Collection -->
+    <section id="airforce" class="product-section">
+        <h2>Air Force Ones</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="/Assets/airforce-white.jpg" alt="Nike Air Force 1 White">
+                <h3>Nike Air Force 1 White</h3>
+                <p>$110 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/airforce-black.jpg" alt="Nike Air Force 1 Black">
+                <h3>Nike Air Force 1 Black</h3>
+                <p>$110 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clarks Collection -->
+    <section id="clarks" class="product-section">
+        <h2>Clarks</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="/Assets/clarks-wallabee.jpg" alt="Clarks Wallabee">
+                <h3>Clarks Wallabee</h3>
+                <p>$150 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/clarks-desert.jpg" alt="Clarks Desert Boot">
+                <h3>Clarks Desert Boot</h3>
+                <p>$130 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MotionBoyz. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Codes/styles.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Navbar</title>
+</head>
+<body>
+  <nav>
+    <!-- Sneaker Logo Inside Navbar -->
+    <a href="/Codes/index.html" class="logo-container">
+      <img src="/Assets/logo.jpg" alt="MotionBoyz Logo" class="logo">
+    </a>
+
+    <ul class="navbar">
+        <li><a href="/Codes/index.html">Home</a></li>
+        <li><a href="/Codes/shop.html">Shop</a></li>
+        <li><a href="/Codes/about.html">About Us</a></li>
+        <li><a href="/Codes/login.html">Login</a></li>
+        <!-- Cart Icon -->
+        <li>
+          <a href="/Codes/cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i> 
+            <span id="cart-count">0</span>
+          </a>
+        </li>
+    </ul>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <script src="/Codes/script.js"></script>
+</body>
+</html>
+

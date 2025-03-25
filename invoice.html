@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - MotionBoyz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <!-- Invoice Section -->
+    <section class="invoice-container">
+        <h2>Order Invoice</h2>
+        <div class="invoice-details">
+            <p><strong>Order Date:</strong> <span id="order-date"></span></p>
+            <p><strong>Customer Name:</strong> <span id="customer-name"></span></p>
+            <p><strong>Shipping Address:</strong> <span id="shipping-address"></span></p>
+        </div>
+
+        <table class="invoice-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="invoice-items">
+                <!-- Products will be added here dynamically -->
+            </tbody>
+        </table>
+
+        <div class="invoice-summary">
+            <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+            <p><strong>Tax (15%):</strong> $<span id="tax">0.00</span></p>
+            <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+        </div>
+
+        <div class="invoice-buttons">
+            <button class="btn cancel-btn" onclick="cancelOrder()">Cancel Order</button>
+            <button class="btn exit-btn" onclick="window.location.href='index.html'">Exit</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MotionBoyz. All Rights Reserved.</p>
+    </footer>
+
+    <script src="invoice.js"></script>
+</body>
+</html>

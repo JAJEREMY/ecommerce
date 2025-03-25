@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MotionBoyz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero about-hero">
+        <div class="hero-content">
+            <h1>About MotionBoyz</h1>
+            <p>Your #1 Jamaican Online Footwear Store!</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="our-story">
+        <h2>Our Story</h2>
+        <p>MotionBoyz was founded with a simple mission: to bring high-quality, stylish sneakers to Jamaicans at the best prices. We specialize in authentic Jordans and Air Force Ones, ensuring you always step out in style.</p>
+    </section>
+
+    <!-- Business Description -->
+    <section class="business-description">
+        <h2>Who We Are</h2>
+        <p>MotionBoyz is Jamaica’s #1 online footwear store, specializing in authentic Jordans and Air Force Ones at unbeatable prices. We are dedicated to providing high-quality sneakers to sneakerheads and fashion enthusiasts across the island. With fast islandwide delivery and a commitment to authenticity, MotionBoyz ensures that every step you take is in style.</p>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <h2>Our Mission</h2>
+        <p>At MotionBoyz, our mission is to redefine sneaker shopping in Jamaica by offering top-tier, authentic footwear with unmatched convenience and affordability. We aim to empower our customers by delivering fashion-forward sneakers that elevate confidence and individuality.</p>
+        <h2>Our Vision</h2>
+        <p>To be the leading online sneaker retailer in the Caribbean, setting the standard for authenticity, affordability, and customer satisfaction. We envision a future where every Jamaican has access to the latest sneaker trends with seamless shopping and rapid delivery.</p>
+    </section>
+
+    <!-- Logo & Slogan -->
+    <section class="logo-slogan">
+        <h2>Our Identity</h2>
+        <p><strong>Logo:</strong> A sleek sneaker silhouette infused with motion streaks, symbolizing speed, style, and urban culture.</p>
+        <p><strong>Slogan:</strong> "Step Up, Stand Out."</p>
+    </section>
+
+    <!-- Color Palette Justification -->
+    <section class="color-palette">
+        <h2>Why These Colors?</h2>
+        <ul>
+            <li><strong>Orange</strong> – Represents energy, excitement, and a call to action, motivating customers to shop.</li>
+            <li><strong>Red</strong> – Symbolizes passion and urgency, perfect for limited sneaker drops and exclusive deals.</li>
+            <li><strong>Blue</strong> – Builds trust and credibility, ensuring customers feel secure when purchasing from us.</li>
+            <li><strong>Grey</strong> – Creates a sleek, modern, and neutral backdrop that lets the sneakers stand out.</li>
+        </ul>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <h2>Why Shop With Us?</h2>
+        <div class="features">
+            <div class="feature-item"><i class="fas fa-truck"></i> Fast Islandwide Delivery</div>
+            <div class="feature-item"><i class="fas fa-lock"></i> 100% Authentic Sneakers</div>
+            <div class="feature-item"><i class="fas fa-star"></i> Best Prices in Jamaica</div>
+            <div class="feature-item"><i class="fas fa-headset"></i> 24/7 Customer Support</div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us">
+        <h2>Get In Touch</h2>
+        <p>Have questions? Reach out to us!</p>
+        <p><i class="fas fa-envelope"></i> Email: support@motionboyz.com</p>
+        <p><i class="fas fa-phone"></i> Phone: +1 (876) 123-4567</p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: Kingston, Jamaica</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MotionBoyz. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

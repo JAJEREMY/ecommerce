@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotionBoyz - Jamaica’s #1 Online Footwear Store</title>
+    <link rel="stylesheet" href="/Codes/styles.css">
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar (Loaded from external file) -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Step Up Your Style with MotionBoyz</h1>
+            <p>Jamaica’s trusted source for premium sneakers, bringing you the best in streetwear culture.</p>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About MotionBoyz -->
+    <section class="about">
+        <h2>About MotionBoyz</h2>
+        <p>MotionBoyz isn’t just a store—it’s a movement. Born from the streets of Jamaica, we know that the right sneakers aren’t just footwear; they’re a statement. Whether you’re stepping into the party scene, hitting the streets, or making power moves, our selection of authentic **Jordans, Clarks, and Air Force Ones** will keep you ahead of the game.</p>
+        <p>We work directly with trusted suppliers to ensure every pair we sell is **100% authentic**. No fakes, no gimmicks—just **real style, real quality, and real hustle.**</p>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <a href="jordans.html" class="category-item">Jordans</a>
+            <a href="airforce.html" class="category-item">Air Force Ones</a>
+            <a href="clarks.html" class="category-item">Clarks</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="/Assets/jordans.jpg" alt="Jordans">
+                <h3>Air Jordan 1 Retro</h3>
+                <p>$150 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/airforce.jpg" alt="Nike Air Force 1">
+                <h3>Nike Air Force 1</h3>
+                <p>$110 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/clarks.jpg" alt="Clarks">
+                <h3>Original Clarks Desert Boots</h3>
+                <p>$120 USD</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <h2>Why Shop With Us?</h2>
+        <p>At MotionBoyz, we bring **authenticity and trust** to Jamaica’s sneaker culture. Here’s why we’re the best:</p>
+        <div class="features">
+            <div class="feature-item"><i class="fas fa-truck"></i> **Fast & Reliable Delivery** – Get your kicks in no time, island-wide shipping available.</div>
+            <div class="feature-item"><i class="fas fa-lock"></i> **Secure Payments** – We use encrypted transactions for your safety.</div>
+            <div class="feature-item"><i class="fas fa-star"></i> **100% Authentic Sneakers** – No fakes, just certified footwear.</div>
+            <div class="feature-item"><i class="fas fa-headset"></i> **24/7 Customer Support** – We’re here to help, anytime.</div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review-box">
+            <p>“Best place to buy Air Forces in Jamaica! Authentic and great customer service.”</p>
+            <p>- Jason B.</p>
+        </div>
+        <div class="review-box">
+            <p>“Fast shipping and amazing quality! Will definitely shop again.”</p>
+            <p>- Shelly R.</p>
+        </div>
+        <div class="review-box">
+            <p>“Clarks on point! The real deal, and the delivery was smooth.”</p>
+            <p>- Omar T.</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Join our mailing list and be the first to know about **exclusive drops, restocks, and deals!**</p>
+        <input type="email" placeholder="Enter your email">
+        <button class="btn">Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MotionBoyz. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - MotionBoyz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h1>Your Shopping Cart</h1>
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart Items will be inserted here dynamically -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <button class="btn checkout-btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MotionBoyz. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    
+</body>
+<script src="cart.js"></script>
+
+</html>
